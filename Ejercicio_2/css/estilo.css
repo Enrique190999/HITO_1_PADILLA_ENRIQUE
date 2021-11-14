@@ -1,0 +1,14 @@
+body {
+    text-align: center;
+}
+
+#containerForm {
+    width: 15%;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 2px solid #ccc;
+}
+
+#tablaSecundaria {
+    margin: 1rem auto;
+}

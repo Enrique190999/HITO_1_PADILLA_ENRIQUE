@@ -1,0 +1,33 @@
+body {
+    text-align: center;
+}
+
+#containerCookies {
+    width: 15%;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 2px solid #ccc;
+}
+
+.tableEjer3 {
+    width: 50%;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 2px solid #ccc;
+}
+
+.resalto {
+    font-weight: bold;
+}
+
+textarea {
+    height: 150px;
+}
+
+.ruta {
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: black;
+    color: white;
+    font-family: 'Consolas';
+}

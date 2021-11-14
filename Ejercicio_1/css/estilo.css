@@ -1,0 +1,49 @@
+body {
+    text-align: center;
+}
+
+#entradaVar {
+    color: rgb(86, 156, 214);
+}
+
+#nombreVar {
+    color: rgb(37, 102, 203);
+}
+
+#valueVariables {
+    color: rgb(206, 145, 120);
+}
+
+.variables {
+    margin-left: 3%;
+    font-family: Consolas;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    margin-right: 3%;
+}
+
+#comentarioEnJavaScript {
+    color: rgb(82, 153, 62);
+}
+
+input {
+    text-align: center;
+}
+
+input[type=text] {
+    width: 400px;
+}
+
+#parteDosComando {
+    color: rgb(220, 220, 170);
+}
+
+#brackets {
+    color: rgb(241, 215, 16);
+}
+
+#entradaFuerteLI {
+    font-style: italic;
+    font-weight: bold;
+}

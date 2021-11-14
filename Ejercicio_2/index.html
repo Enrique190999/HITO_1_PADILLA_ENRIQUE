@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Ejercicio_2/css/estilo.css">
+</head>
+
+<body onload="carga()">
+    <h1>Ejercicio 2 - DOM vs BOM en JavaScript</h1>
+    <hr><br>
+    <h3>1. Diseña una aplicación web con un formulario, imagenes y tablas.</h3><br>
+
+    <div id="containerForm">
+        <form action="" id="formEjer2">
+            <table>
+                <tr>
+                    <td><img src="img/logo.webp" width="40%"></td>
+                </tr>
+                </tr>
+                <tr>
+                    <td> <br><label for="nombreF" class="form-label">Nombre:</label> <input type="text" id="nombreF" class="form-control" name="nombreInput"><br><br></td>
+                </tr>
+                <tr>
+                    <td> <label for="apellidosF" class="form-label">Apellidos:</label> <input type="text" class="form-control" id="apellidosF" name="apellidosInput"><br><br></td>
+                </tr>
+                <tr>
+                    <td> <label for="emailF" class="form-label">Email:</label> <input type="text" class="form-control" id="emailF" name="emailInput"><br><br></td>
+                </tr>
+                <tr>
+                    <td> <label for="dniF" class="form-label">DNI:</label> <input type="text" class="form-control" id="dniF" name="edadInput"><br><br></td>
+                </tr>
+                <tr>
+                    <td> <label for="edadF" class="form-label">Edad:</label> <input type="text" class="form-control" id="edadF" name="edadInput"><br><br>
+                </tr>
+                <tr>
+                    <td> <input type="submit" id="botonEnvio" onclick="validar(event)" class="btn btn-primary" value="Enviar"></button>
+                </tr>
+            </table>
+        </form><br>
+        <p>Introduzca los datos y pulse en Enviar para continuar</p>
+    </div>
+    <!--  <p class="variables">
+        <label id="nombreVar">var</label>
+        <label id="entradaVar">x</label>
+        <label>=</label>
+        <label id="valueVariables">12</label>
+        <label>;</label>
+    </p>
+    -->
+    <br>
+    <div id="ejer2">
+        <h3>2. Modifica los contenidos de cada uno de los elementos utilizando JavaScript mediante acceso al Document Object Model</h3>
+        <br>
+        <p>En este formulario puedes cambiar cualquier valor que hayas introducido anteriormente unicamente escribiendolo y dando a Modificar datos</p>
+        <p>Al finalizar se mostraran los datos en el formulario principal</p>
+        <table class="tabla" id="tablaSecundaria">
+            <tr>
+                <td><label for="nombreModificar">Nombre: </label></td>
+                <td><input type="text" id="nombreModificar"></td>
+            </tr>
+            <tr>
+                <td><label for="apellidosModificar">Apellidos: </label></td>
+                <td><input type="text" id="apellidosModificar"></td>
+            </tr>
+            <tr>
+                <td><label for="emailModificar">Email: </label></td>
+                <td><input type="text" id="emailModificar"></td>
+            </tr>
+            <tr>
+                <td><label for="dniModificar">DNI: </label></td>
+                <td><input type="text" id="dniModificar"></td>
+            </tr>
+            <tr>
+                <td><label for="edadModificar">Edad: </label></td>
+                <td><input type="text" id="edadModificar"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><br>
+                    <button id="modDatos" class="btn btn-primary" onclick="segundaAccion()">Modificar datos</button>
+                </td>
+
+            </tr>
+
+            <script src="/Ejercicio_2/js/script.js"></script>
+
+        </table>
+
+
+        <p>(Al pulsar en modificar datos muestra el siguiente apartado del ejercicio)</p>
+
+    </div>
+
+    <br>
+    <div id="ejer3">
+        <h3>3. Realizar al menos 3 ejemplos de manejo de BOM. Por ejemplo, identificar navegador, consultar dimensiones de la ventana, mostrar listado de paginas visitadas...</h3>
+        <br>
+        <p>(Al pulsar en el botón crea un elemento por JavaScript mostrando los valores justo debajo del botón)</p>
+        <br><button id="botonBOM" onclick="mostrarBOM()" class="btn btn-primary">Mostrar información de BOM</button>
+    </div>
+
+</body>
+
+</html>
